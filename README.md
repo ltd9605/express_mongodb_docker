@@ -53,7 +53,10 @@ Open your browser and go to:
 http://localhost:<yourcustomport>
 ```
 
+---
 - Another way you can try is:
+---
+
 # Step 1: Clone repo
 ```
 git clone https://github.com/yourusername/express_mongodb_docker.git
