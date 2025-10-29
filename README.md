@@ -54,25 +54,25 @@ http://localhost:<yourcustomport>
 ```
 
 ---
-- Another way you can try is:
+## Another way you can try is:
 ---
 
-# Step 1: Clone repo
+### Step 1: Clone repo
 ```
 git clone https://github.com/yourusername/express_mongodb_docker.git
 
 cd express_mongodb_docker
 ```
-# Step 2: Create .env file
+### Step 2: Create .env file
 ```
 cp .env.example .env
 Then edit PORT, MONGO_URI if needed
 ```
-# Step 3: Build and run
+### Step 3: Build and run
 ```
 docker-compose up --build -d
 ```
-# Step 4: Access the app
+### Step 4: Access the app
 Open browser:
 ```
  http://localhost:3000 (or mapped host port)
