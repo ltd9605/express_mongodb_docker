@@ -1,0 +1,37 @@
+{
+  "name": "express_mongodb_docker",
+  "version": "1.0.0",
+  "description": "CRUD applocation",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ltd9605/express_mongodb_docker.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb",
+    "docker"
+  ],
+  "author": "ltd9605",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ltd9605/express_mongodb_docker/issues"
+  },
+  "homepage": "https://github.com/ltd9605/express_mongodb_docker#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.2",
+    "mongoose-sequence": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

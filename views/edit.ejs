@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Employee</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> Apollonia Dental Practice</h1>
+            <h4>Edit New Employee</h4>
+        </div>
+
+        <div class="form-container">
+            <form action="/update/<%= employ._id %>/completed" method="POST">
+
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" value="<%= employ.firstName %>" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" value="<%= employ.lastName %>" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="departmentId">Department</label>
+                    <select id="departmentId" name="departmentId" required>
+                        <option value="">-- Please choose a department --</option>
+                        <% departments.forEach(dept=> { %>
+                            <option value="<%= dept._id %>" <%=employ.departmentId &&
+                                employ.departmentId===dept._id.toString() ? 'selected' : '' %>>
+                                <%= dept.name %>
+                            </option>
+                            <% }) %>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-submit">Save Employee</button>
+                    <a href="/" class="btn-cancel">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

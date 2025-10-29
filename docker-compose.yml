@@ -1,0 +1,25 @@
+services:
+  app:
+    build: .
+    container_name: express_app
+    ports:
+      - "3000:8686" # host_port:container_port
+    env_file:
+      - .env
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:6
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: mydatabase
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:

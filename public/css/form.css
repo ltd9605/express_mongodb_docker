@@ -1,0 +1,57 @@
+/* Thêm một vài style riêng cho form */
+.form-container {
+    background-color: #fdfdfd;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Quan trọng để padding không làm vỡ layout */
+    font-size: 16px;
+}
+
+.form-actions {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+.btn-cancel {
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268;
+}
